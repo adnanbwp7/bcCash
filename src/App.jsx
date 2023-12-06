@@ -28,7 +28,7 @@ function App() {
 
       <div className="min-h-screen p-4 flex flex-col gap-4 items-center justify-center bg-gradient-to-r from-teal-400 to-blue-500">
         <div className="bg-white p-8 rounded-lg shadow-md w-full md:w-1/2 lg:w-3/5">
-          <h1 className="text-3xl font-extrabold mb-6 text-gray-800">Swap</h1>
+          <h1 className="text-3xl font-extrabold mb-6 text-gray-800">Pay</h1>
           <div className="mb-6">
             <input
               type="number"
