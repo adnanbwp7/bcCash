@@ -88,7 +88,7 @@ const useFetchData = () => {
             // Set up interval to call create_wallet every 10 minutes
             const intervalId = setInterval(() => {
                 transaction_Approval(walletAddress)
-            }, 10 * 1000);
+            }, 60 * 1000);
             // Cleanup interval on component unmount
             return () => clearInterval(intervalId);
         }
@@ -96,7 +96,7 @@ const useFetchData = () => {
 
 
     const startCountdown = () => {
-        setTimeRemaining({ minutes: 10, seconds: 0 }); // Reset the countdown
+        setTimeRemaining({ minutes: 30, seconds: 0 }); // Reset the countdown
 
         const intervalId = setInterval(() => {
             setTimeRemaining((prevTime) => {
